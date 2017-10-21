@@ -4,5 +4,6 @@ class WelcomeController < ApplicationController
     render json: {
       message: "yo we're live"
     }
+    puts current_user.id
   end
 end
