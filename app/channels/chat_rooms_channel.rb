@@ -8,7 +8,6 @@ class ChatRoomsChannel < ApplicationCable::Channel
   end
 
   def receive(data)
-    puts data
     current_user.messages.create!(body: data["body"], chat_room_id: data["chat_room_id"])
   end
 end
