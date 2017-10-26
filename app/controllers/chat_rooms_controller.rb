@@ -17,7 +17,7 @@ class ChatRoomsController < ApplicationController
     @chat_room = current_user.chat_rooms.build(chat_room_params)
     if @chat_room.save
       puts "OK"
-      render json: @chat_room
+      redirect_to chat_rooms_path
     else
       raise "Messed up!"
     end
@@ -26,7 +26,7 @@ class ChatRoomsController < ApplicationController
   private
 
   def chat_room_params
-    params.require(:chat_room).permit(:title)
+    params.require(:chat_room).permit(:title, :user_id)
   end
 
 end
