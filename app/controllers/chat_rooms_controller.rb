@@ -23,6 +23,16 @@ class ChatRoomsController < ApplicationController
     end
   end
 
+  def destroy
+    @chat_room = ChatRoom.find(params[:id])
+    if @chat_room.destroy
+      puts "OK"
+      redirect_to chat_rooms_path
+    else
+      raise "Messed up!"
+    end
+  end
+
   private
 
   def chat_room_params
