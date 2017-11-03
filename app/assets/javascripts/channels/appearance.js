@@ -5,7 +5,6 @@ $(document).on('turbolinks:load', () => {
   }, {
     received: (data) => {
       let user = JSON.parse(data);
-      console.log(user)
       if (user.online){
         return onlineList.append(user)
       } else {
