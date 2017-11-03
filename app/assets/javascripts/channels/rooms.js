@@ -24,7 +24,7 @@ $(document).on('turbolinks:load', function() {
         let msg = event.target.value
         let chatroomId = messages.attr('data-chat-room-id')
         App.global_chat.send({body: msg, chat_room_id: chatroomId})
-        $('message-content').val(" ")
+        $('#message-content').val(" ")
         return false;
       }
     });
