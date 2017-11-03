@@ -4,8 +4,10 @@ This is a practice repo for working with ActionCable, the Rails version of webso
 
 ## Tutorials followed:
 
-* [GreatCodeAdventure article](http://www.thegreatcodeadventure.com/rails-5-action-cable-with-multiple-chatroom-subscriptions/)
+* [GreatCodeAdventure article for JavaScript Front End](http://www.thegreatcodeadventure.com/rails-5-action-cable-with-multiple-chatroom-subscriptions/)
 
-* [Sitepoint article](https://www.sitepoint.com/create-a-chat-app-with-rails-5-actioncable-and-devise/)
+* [Sitepoint article for basic structure](https://www.sitepoint.com/create-a-chat-app-with-rails-5-actioncable-and-devise/)
 
-* [Official ActionCable documentation](http://guides.rubyonrails.org/action_cable_overview.html)
+* [Official ActionCable documentation for reference](http://guides.rubyonrails.org/action_cable_overview.html)
+
+* [Medium article for Online User Appearance](https://medium.com/@tomyncy618/action-cable-chat-part-2-971c6949be29)
