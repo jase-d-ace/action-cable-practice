@@ -13,4 +13,14 @@ class User < ApplicationRecord
     email.split("@")[0]
   end
 
+  def is_online
+    self.update_attributes(online: true)
+  end
+
+  def is_offline
+    self.update_attributes(online: false)
+  end
+
+  after_update_commit {AppearanceBroadcastJob.perform_later self}
+
 end

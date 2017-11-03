@@ -2,6 +2,17 @@
 
 <p class="lead"><%= link_to 'New chat room', new_chat_room_path, class: 'btn btn-primary' %></p>
 
+<h3>Online Users:</h3>
+<ul>
+  <div id="online-users">
+    <% @users.each do |user| %>
+      <% if user.online %>
+        <li><%= user.name %></li>
+      <% end %>
+    <% end %>
+  </div>
+</ul>
+
 <ul>
   <% @chat_rooms.each do |room| %>
     <li><%= link_to "Enter #{room.title}", chat_room_path(room) %></li>
